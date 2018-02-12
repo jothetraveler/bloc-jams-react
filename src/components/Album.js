@@ -92,11 +92,10 @@ class Album extends Component{
         this.setState({ currentTime: newTime });
       }
 
-      handleVolumeChange(val){
-        const newVolume = val;
+      handleVolumeChange(e){
+        const newVolume = e.target.value/100;
         this.audioElement.volume = newVolume;
         this.setState({ volume: newVolume});
-        //console.log(val)
       }
 
       // formatTime(){
@@ -146,7 +145,7 @@ class Album extends Component{
            duration={this.audioElement.duration}
            currentTime={this.audioElement.currentTime}
            handleTimeChange={(e) => this.handleTimeChange(e)}
-           handleVolumeChange={(val) => this.handleVolumeChange(val)}
+           handleVolumeChange={(e) => this.handleVolumeChange(e)}
          />
       </section>
     );
