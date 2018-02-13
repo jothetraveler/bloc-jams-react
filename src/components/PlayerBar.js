@@ -16,7 +16,9 @@ class PlayerBar extends Component{
            </button>
          </section>
          <section id="time-control">
+          {/*{ this.props.formatTime(*/}
            <div className="current-time">{this.props.currentTime}</div>
+         {/* )} */}
            <input
              type="range"
              className="seek-bar"
@@ -33,7 +35,7 @@ class PlayerBar extends Component{
            <input
              type="range"
              className="seek-bar"
-             value="50"
+             value={this.props.volume}
              max="100"
              min="0"
              step="10"

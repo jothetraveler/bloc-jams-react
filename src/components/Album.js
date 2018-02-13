@@ -98,9 +98,14 @@ class Album extends Component{
         this.setState({ volume: newVolume});
       }
 
-      // formatTime(){
-      //
-      // }
+      formatTime(timeInSec){
+        const m = timeInSec / 60;
+        const ss = timeInSec - (m * 60);
+        return {'m':'ss'}
+        if(typeof timeInSec !== "number"){
+          return "-:--";
+        }
+      }
 
   render(){
     return (
@@ -146,6 +151,7 @@ class Album extends Component{
            currentTime={this.audioElement.currentTime}
            handleTimeChange={(e) => this.handleTimeChange(e)}
            handleVolumeChange={(e) => this.handleVolumeChange(e)}
+           formatTime={(timeInSec) => this.formatTime(timeInSec)}
          />
       </section>
     );
