@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import './Album.css';
 
 class Album extends Component{
   constructor(props){
@@ -99,7 +100,7 @@ class Album extends Component{
       }
 
       formatTime(time){
-        return time ? `${Math.floor(time / 60)}:${Number(time % 60 / 100).toFixed(2).substr(2,3)}` : '-:--'
+        return time ? `${Math.floor(time / 60)}:${Number(time % 60 / 100).toFixed(2).substr(2,3)}` : '-:--';
         {/*const m = time / 60;
         const ss = time - (m * 60);
         typeof time !== "number" ? {'m':'ss'} : "-:--";*/}

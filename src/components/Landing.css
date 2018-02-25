@@ -1,0 +1,16 @@
+.landing{
+  height: 600px;
+  margin: auto;
+
+}
+
+.hero-title{
+  padding-top: 20px;
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+
+.point{
+  margin-top: 15px;
+  margin-bottom: 45px;
+}

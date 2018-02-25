@@ -1,0 +1,33 @@
+.album{
+  margin: auto;
+
+}
+
+#album-cover-art{
+  margin-top: 50px;
+}
+
+#album-title{
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.artist{
+  font-weight: lighter;
+}
+
+#release-info{
+
+
+}
+
+.song-number{
+display: block;
+}
+
+span:hover .song-number,
+.ion-pause,
+.ion-play{
+
+display: none;
+}

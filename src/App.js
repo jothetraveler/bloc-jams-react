@@ -10,11 +10,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>Bloc Jams</h1>
-            <nav>
-              <Link to="/">Landing</Link>
-              <Link to="/library">Library</Link>
+        <header className="App-header">
+          <h1 className="App-title">Bloc Jams</h1>
+            <nav className="App-nav">
+              <Link className="App-nav-title"to="/">Landing</Link>
+              <Link className="App-nav-title"to="/library">Library</Link>
 
             </nav>
         </header>
