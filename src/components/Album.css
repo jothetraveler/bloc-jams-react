@@ -32,10 +32,11 @@ button:hover .ion-pause,
 display: none;
 }
 
-/*Playing*/
+/*Playing
 {this.isPlaying == true} .ion-pause{
   display: block;
 }
 {this.isPlaying == false} .ion-play{
   display: block;
 }
+*/
