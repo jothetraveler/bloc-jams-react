@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
-import './Album.css';
+import styles from './Album.css';
 
 class Album extends Component{
   constructor(props){
@@ -105,6 +105,19 @@ class Album extends Component{
         const ss = time - (m * 60);
         typeof time !== "number" ? {'m':'ss'} : "-:--";*/}
 
+      }
+
+      buttonFormat(){
+        /* if (this.play){
+        {styles.Playing}
+      }
+          else if(this.pause){
+          {styles.Pause}
+        }
+          else{
+          {styles.songNumber}
+        }
+      */
       }
 
   render(){

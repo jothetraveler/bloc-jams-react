@@ -21,13 +21,34 @@
 
 }
 
-.song-number{
+/*Playing*/
+/*
+.ion-pause {
 display: block;
 }
 
-span:hover .song-number,
-.ion-pause,
+.song-number,
 .ion-play{
-
 display: none;
 }
+*/
+
+/*Not Playing*/
+button:hover .song-number,
+button:hover .ion-pause,
+.ion-pause,
+.ion-play {
+display: none;
+}
+
+{this.play} .ion-pause,
+.song-number{
+  display: block;
+}
+/*
+.song-number,
+.ion-pause,
+.ion-play{
+display: block;
+}
+*/
