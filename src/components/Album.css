@@ -20,18 +20,9 @@
 
 
 }
-
-/*Playing*/
-/*
-.ion-pause {
-display: block;
+.song-number{
+  display: block;
 }
-
-.song-number,
-.ion-play{
-display: none;
-}
-*/
 
 /*Not Playing*/
 button:hover .song-number,
@@ -41,14 +32,10 @@ button:hover .ion-pause,
 display: none;
 }
 
-{this.play} .ion-pause,
-.song-number{
+/*Playing*/
+{this.isPlaying == true} .ion-pause{
   display: block;
 }
-/*
-.song-number,
-.ion-pause,
-.ion-play{
-display: block;
+{this.isPlaying == false} .ion-play{
+  display: block;
 }
-*/
