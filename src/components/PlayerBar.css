@@ -1,0 +1,12 @@
+#play-pause{
+
+}
+
+#volume-control{
+  float: right;
+  margin-right: 40px;
+}
+
+.low-vol{
+  display: inline;
+}

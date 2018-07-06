@@ -108,16 +108,16 @@ class Album extends Component{
       }
 
       buttonFormat(){
-        /* if (this.play){
-        {styles.Playing}
+        if (this.state.isPlaying == true && this.state.currentSong == 'song'){
+        {styles.something}
       }
-          else if(this.pause){
-          {styles.Pause}
+          else if(this.state.isPlaying == false && this.state.currentSong == 'song'){
+          {styles.something}
         }
           else{
-          {styles.songNumber}
+          {styles.something}
         }
-      */
+
       }
 
   render(){
@@ -147,8 +147,8 @@ class Album extends Component{
                    <span className="ion-pause"></span>
                  </button>
                 </td>
-                <td>{song.title}</td>
-                <td>{song.duration}</td>
+                <td className="song-title">{song.title}</td>
+                <td className="song-duration">{song.duration}</td>
               </tr>
             )
           }

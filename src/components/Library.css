@@ -1,0 +1,26 @@
+#album-cover{
+  padding-top: 50px;
+}
+
+#title,
+#artist,
+#song-length{
+  text-decoration: none;
+  color: mediumblue;
+  margin-top: 10px;
+
+}
+
+#title{
+  font-size: 30px;
+
+}
+
+#artist{
+  font-size: 20px;
+
+}
+
+#song-length{
+  font-size: 18px;
+}
