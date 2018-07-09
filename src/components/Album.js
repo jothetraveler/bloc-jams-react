@@ -101,17 +101,14 @@ class Album extends Component{
 
       formatTime(time){
         return time ? `${Math.floor(time / 60)}:${Number(time % 60 / 100).toFixed(2).substr(2,3)}` : '-:--';
-        {/*const m = time / 60;
-        const ss = time - (m * 60);
-        typeof time !== "number" ? {'m':'ss'} : "-:--";*/}
 
       }
 
       buttonFormat(){
-        if (this.state.isPlaying == true && this.state.currentSong == 'song'){
+        if (this.state.isPlaying === true && this.state.currentSong === 'song'){
         {styles.something}
       }
-          else if(this.state.isPlaying == false && this.state.currentSong == 'song'){
+          else if(this.state.isPlaying === false && this.state.currentSong === 'song'){
           {styles.something}
         }
           else{
@@ -122,6 +119,7 @@ class Album extends Component{
 
   render(){
     return (
+      <div>
       <section className='album'>
         <section id='album-info'>
           <img id="album-cover-art" src={this.state.album.albumCover} alt="album cover"/>
@@ -154,6 +152,9 @@ class Album extends Component{
           }
            </tbody>
          </table>
+         </section>
+
+         <section id="player-bar">
          <PlayerBar
            isPlaying={this.state.isPlaying}
            currentSong={this.state.currentSong}
@@ -167,6 +168,7 @@ class Album extends Component{
            formatTime={(time) => this.formatTime(time)}
          />
       </section>
+      </div>
     );
   }
 }

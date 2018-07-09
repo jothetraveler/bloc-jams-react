@@ -1,5 +1,12 @@
 .album{
-  margin: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 4rem auto 150px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: black;
+  background-color: inherit;
+
 
 }
 #album-cover-art {
@@ -15,27 +22,34 @@
   margin: 0;
 }
 
+#album-info {
+  overflow: hidden;
+}
+
 .artist{
   font-weight: normal;
 }
 
 #release-info {
   opacity: 0.5;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
 }
 
 /*Song List*/
 #song-list {
   border-collapse: collapse;
   clear: both;
-  font-weight: 100;
+  font-weight: normal;
   margin-top: 3rem;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 20px;
+
 }
 
 #song-number-column {
   width: 40px;
+  font-weight: bold;
 }
 #song-duration-column {
   width: 80px;
@@ -46,7 +60,7 @@
 
 tr {
   border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
-  background: hsla(0, 0%, 0%, 0.01);
+  background: #f5f2f7;
   transition: all 0.2s ease;
 }
 
@@ -71,8 +85,9 @@ tr.paused .song-number {
 }
 
 tr:hover {
-  background: hsla(0, 0%, 0%, 0.05);
+  background: #eeebf0;
   cursor: pointer;
+
 }
 
 tr.playing {
@@ -80,7 +95,8 @@ tr.playing {
 }
 
 tr:hover .song-title {
-  color: hsla(0, 0%, 100%, 1);
+  /*color: hsla(0, 0%, 100%, 1);*/
+  color:blue;
 }
 
 tr:last-child {
@@ -94,7 +110,7 @@ td {
 tr button {
   border: none;
   background: none;
-  color: white;
+  color: blue;
   cursor: pointer;
   padding: 0;
 }
@@ -120,37 +136,17 @@ tr.playing button:focus .ion-pause {
 }
 
 .song-number {
-  color: hsla(0, 0%, 100%, 0.66);
+  color: black;
 }
 
 .song-title {
-  color: hsla(0, 0%, 100%, 0.9);
+  color: black;
 }
 
 .song-duration {
-  color: hsla(0, 0%, 100%, 0.5);
+  color: black;
   text-align: right;
 }
-
-/*Not Playing
-button:hover .song-number,
-button:hover .ion-pause{
-display: none;
-}
-
-.ion-pause,
-.ion-play{
-  display: none;
-}
-*/
-/*Playing
-{this.isPlaying == true} .ion-pause{
-  display: block;
-}
-{this.isPlaying == false} .ion-play{
-  display: block;
-}
-*/
 
 /*Jquery styling*/
 /*
@@ -169,10 +165,6 @@ main {
   margin: 4rem auto 150px;
   padding: 0 1rem;
   box-sizing: border-box;
-}
-
-#album-info {
-  overflow: hidden;
 }
 
 h2.artist {
