@@ -2,12 +2,16 @@
   padding-top: 50px;
 }
 
+#album-info{
+  text-decoration: none !important;
+}
+
 #title,
 #artist,
 #song-length{
-  text-decoration: none;
+
   color: mediumblue;
-  margin-top: 10px;
+  margin-top: 5px;
 
 }
 

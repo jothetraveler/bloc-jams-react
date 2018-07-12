@@ -1,11 +1,13 @@
 import React from 'react';
-import './Landing.css';
+import styles from './Landing.css';
+import womanHeadphones from '../images/woman-music-headphones-wallpapers.jpg';
 
+console.log(womanHeadphones);
 
 const Landing = () => (
       <section className="landing">
         <h1 className="hero-title">Turn the music up!</h1>
-        <img id="hero-title-img" src="/images/women-music-headphones-wallpapers.jpg" alt="woman in headphones"/>
+        <img id="hero-title-img" src={womanHeadphones} alt="woman in headphones"/>
         <section className="selling-points">
           <div className="point">
             <h2 className="point-title">Choose Your Music</h2>
