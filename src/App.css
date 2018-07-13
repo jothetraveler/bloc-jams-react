@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Slabo;
+  src: url("https://fonts.googleapis.com/css?family=Slabo+27px");
+}
+
 .App {
   text-align: center;
   

@@ -1,3 +1,7 @@
+.Library{
+  font-family: Slabo;
+}
+
 #album-cover{
   padding-top: 50px;
 }
@@ -12,19 +16,26 @@
 
   color: mediumblue;
   margin-top: 5px;
-
-}
-
-#title{
+  display: inline-block;
+  margin-right: 15px;
   font-size: 30px;
 
 }
 
-#artist{
-  font-size: 20px;
+
+#title{
+  font-size: 30px;
+  display: inline-block;
+
 
 }
 
+#artist{
+
+
+display: inline-block;
+}
+
 #song-length{
-  font-size: 18px;
+
 }

@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Landing.css';
-import woman_Headphones from 'images/woman-music-headphones-wallpapers.jpg';
+import woman_Headphones from '../images/women-music-headphones-wallpapers.jpg';
+import cellphone from '../images/cell-phone-smartphone-woman.jpg';
 
 
 
 const Landing = () => (
       <section className="landing">
-        <h1 className="hero-title">Turn the music up!</h1>
+        <h1 className="hero-title">Turn The Music Up!</h1>
         <img id="hero-title-img" src={woman_Headphones} alt="woman in headphones"/>
         <section className="selling-points">
           <div className="point">
@@ -21,6 +22,7 @@ const Landing = () => (
 
           <div className="point">
             <h2 className="point-title">Mobile Enabled</h2>
+            <img id="title-img" src={cellphone} alt="woman with cellphone"/>
             <p className="point-description">Listen to your music on the go. This streaming service is available on all mobile platforms.</p>
           </div>
         </section>

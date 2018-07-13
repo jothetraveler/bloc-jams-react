@@ -1,13 +1,26 @@
 .landing{
   height: 600px;
   margin: auto;
-
+  font-family: Slabo;
 }
 
 .hero-title{
   padding-top: 20px;
-  margin-bottom: 60px;
-  font-size: 32px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.point-title{
+  font-size: 40px;
+}
+
+.point-description{
+  font-size: 24px;
+}
+
+#hero-title-img{
+  max-width: 800px;
+
 }
 
 .point{
